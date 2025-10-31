@@ -1,0 +1,67 @@
+/* Sticker Template - Replace EMOJI_HERE with your desired emoji */
+/* Copy and modify this template for each sticker you want to add */
+
+.sticker-1 {
+  position: absolute;
+  top: 10%; /* Adjust position */
+  left: 10%; /* Adjust position */
+  font-size: 24px; /* Adjust size */
+  opacity: 0.6; /* Adjust transparency */
+  animation: float 15s ease-in-out infinite; /* Adjust animation duration */
+  pointer-events: none;
+  z-index: 1;
+}
+
+.sticker-1::before {
+  content: 'EMOJI_HERE'; /* Replace with your emoji, e.g., '💖' */
+}
+
+/* Additional sticker examples */
+.sticker-2 {
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  font-size: 20px;
+  opacity: 0.5;
+  animation: float 18s ease-in-out infinite;
+  animation-delay: 2s; /* Stagger animations */
+  pointer-events: none;
+  z-index: 1;
+}
+
+.sticker-2::before {
+  content: 'EMOJI_HERE';
+}
+
+.sticker-3 {
+  position: absolute;
+  bottom: 25%;
+  left: 20%;
+  font-size: 28px;
+  opacity: 0.4;
+  animation: float 12s ease-in-out infinite;
+  animation-delay: 4s;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.sticker-3::before {
+  content: 'EMOJI_HERE';
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-10px) rotate(5deg); }
+  50% { transform: translateY(-20px) rotate(0deg); }
+  75% { transform: translateY(-10px) rotate(-5deg); }
+}
+
+/* Usage Instructions:
+1. Copy a sticker class (e.g., .sticker-1)
+2. Change the class name to something unique
+3. Adjust top, left, font-size, opacity as needed
+4. Replace 'EMOJI_HERE' with your desired emoji
+5. Add the class to your HTML body or a container div
+6. Example HTML: <div class="sticker-1"></div>
+*/
